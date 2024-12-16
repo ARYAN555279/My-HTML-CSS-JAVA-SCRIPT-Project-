@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Multiplication Table</title>
+    <style>
+      body {
+        text-align: center;
+        color: blue;
+        font-size: 2vw;
+      }
+    </style>
+  </head>
+  <body>
+      <h3>Enter value of Number : <input type="number" id="x" /></h3>
+      <button onclick="table()">Submit</button><br />
+      <p id="answer"></p>
+
+
+<script>
+  function table() {
+    var getData = document.getElementById("x").value;
+    var ans = document.getElementById("answer");
+    var i;
+    for (let i=1 ; i<=10 ; i++){
+      ans.innerHTML+= getData + "*" + i + "=" + getData*i + "<br>";
+    }
+  }
+  
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- <script>
+      function table() {
+        var getData = document.getElementById("x").value;
+        var ans = document.getElementById("answer");
+        var i;
+        for (let i = 1; i <= 10; i++ ) {
+          ans.innerHTML+= getData + " * " + i + " = " + getData * i + "<br>" ;
+        }
+      }
+    </script> -->
+  </body>
+</html>

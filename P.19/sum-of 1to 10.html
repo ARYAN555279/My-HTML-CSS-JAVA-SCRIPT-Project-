@@ -1,0 +1,47 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>1 to 10</title>
+    <style>
+      body {
+        text-align: center;
+        color: rgb(84, 42, 252);
+        font-size: 2vw;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+
+      let x = parseInt(prompt("Enter a  Number:"));
+      let sum = 0;
+      for (let i = 1; i <= x; i++) {
+        sum=sum+i;
+      }
+      document.write("The sum of numbers is :" + sum);
+    </script>
+  </body>
+</html> -->
+
+<!DOCTYPE html>
+<html>
+  <body>
+    <label for="number">Number:</label>
+    <input type="number" id="number" placeholder="enter any number">
+
+    <p>Click the button to change the value of the text field.</p>
+
+    <button onclick="myFunction()">Try it</button>
+
+    <script>
+      function myFunction() {
+        let a = parseInt(document.getElementById("number").value);
+        let sum = 0;
+        for(let i = 1; i <= a; i++) {
+          sum = sum + i;
+        }
+        document.write(sum);
+      }
+    </script>
+  </body>
+</html>

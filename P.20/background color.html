@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      document.write("<h2>Select a Background Color</h2>");
+      document.write("<select id='colorSelector'>");
+      document.write("<option value='white'>White</option>");
+      document.write("<option value='red'>Red</option>");
+      document.write("<option value='blue'>Blue</option>");
+      document.write("<option value='green'>Green</option>");
+      document.write("<option value='yellow'>Yellow</option>");
+      document.write("</select>");
+      document.write("<button id='changeColor'>Change Color</button>");
+      document
+        .getElementById("changeColor")
+        .addEventListener("click", function () {
+          let selectedColor = document.getElementById("colorSelector").value;
+          document.body.style.backgroundColor = selectedColor;
+        });
+    </script>
+  </body>
+</html>

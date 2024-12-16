@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>factorial</title>
+  </head>
+  <body>
+    <script>
+      document.write("<h2>Factorial Calculator</h2>");
+      document.write(
+        "Enter a number: <input type='number' id='inputNumber'><br><br>"
+      );
+      document.write(
+        "Factorial: <input type='text' id='result' readonly><br><br>"
+      );
+      document.write("<button id='calculate'>Calculate Factorial</button>");
+
+      document
+        .getElementById("calculate")
+        .addEventListener("click", function () {
+          let number = parseInt(document.getElementById("inputNumber").value);
+          let factorial = 1;
+          for (let i = 1; i <= number; i++) {
+            factorial *= i;
+          }
+          document.getElementById("result").value = factorial;
+        });
+    </script>
+  </body>
+</html>

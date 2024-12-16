@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>prime or not</title>
+    <style>
+      body {
+        text-align: center;
+        color: blue;
+        font-size: 2vw;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      function isItPrime(no) {
+        let i = 2;
+        while (i < no / 2) {
+          if (no % i === 0) {
+            document.write("The Number you entered is not a Prime Number");
+            return;
+          }
+          i = i + 1;
+        }
+        document.write("The Number you entered is a Prime Number");
+      }
+      let num = parseInt(prompt("enter any Number", ""));
+      isItPrime(num);
+    </script>
+
+    <!-- <script>
+      function isPrime(num) {
+        if (num <= 1) return false; 
+        for (let i = 2; i <= Math.sqrt(num); i++) {
+          if (num % i === 0) return false; 
+        }
+        return true; 
+      }
+    </script> -->
+  </body>
+</html>
